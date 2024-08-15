@@ -18,8 +18,11 @@ This is a simple e-commerce web application built with Angular using JSON Server
 ## Demo
 
 
+https://github.com/user-attachments/assets/6993a277-8a24-4e96-856e-99a9b8f21312
 
-https://github.com/user-attachments/assets/09ffb89f-7d8e-46f4-98f7-a67128e43fcc
+
+
+
 
 
 ## How to Run the Project
