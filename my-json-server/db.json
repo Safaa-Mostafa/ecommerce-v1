@@ -1,0 +1,216 @@
+{
+  "items": [
+    {
+      "id": "101",
+      "name": "Carrot",
+      "priceAfterDiscount": 30,
+      "priceBeforeDiscount": 2.2,
+      "discount": 0.1,
+      "quantity": 1,
+      "availableInStock": 50,
+      "categoryId": 1,
+      "img": "https://tse3.mm.bing.net/th?id=OIP.h8ISIodUaQRtSBU06KkvPwHaGr&pid=Api&P=0&h=220",
+      "rating": 5,
+      "description": "Fresh and crunchy carrots.",
+      "created": "2024-08-01T00:00:00Z"
+    },
+    {
+      "id": "102",
+      "name": "Broccoli",
+      "priceAfterDiscount": 90,
+      "priceBeforeDiscount": 2.9,
+      "discount": 0.15,
+      "quantity": 1,
+      "availableInStock": 60,
+      "categoryId": 1,
+      "img": "https://tse3.mm.bing.net/th?id=OIP.zeKqXlUZor5fT88s0IVDhQHaEm&pid=Api&P=0&h=220",
+      "rating": 5,
+      "description": "Nutritious green broccoli.",
+      "created": "2024-08-02T00:00:00Z"
+    },
+    {
+      "id": "103",
+      "name": "Apple",
+      "priceAfterDiscount": 30,
+      "priceBeforeDiscount": 2.9,
+      "discount": 0.15,
+      "quantity": 1,
+      "availableInStock": 150,
+      "categoryId": 2,
+      "img": "https://tse2.mm.bing.net/th?id=OIP.H3W1jzOge8Q9gi0A60pUOQHaFJ&pid=Api&P=0&h=220",
+      "rating": 5,
+      "description": "Juicy red apples.",
+      "created": "2024-08-03T00:00:00Z"
+    },
+    {
+      "id": "104",
+      "name": "Banana",
+      "priceAfterDiscount": 90,
+      "priceBeforeDiscount": 2.2,
+      "discount": 0.1,
+      "quantity": 1,
+      "availableInStock": 100,
+      "categoryId": 2,
+      "img": "https://tse1.mm.bing.net/th?id=OIP.t52xUJ7Fxh44VXnz_0K5twHaEK&pid=Api&P=0&h=220",
+      "rating": 5,
+      "description": "Sweet and ripe bananas.",
+      "created": "2024-08-04T00:00:00Z"
+    },
+    {
+      "id": "105",
+      "name": "Beef Steak",
+      "priceAfterDiscount": 100,
+      "priceBeforeDiscount": 15,
+      "discount": 0.2,
+      "quantity": 1,
+      "availableInStock": 30,
+      "categoryId": 3,
+      "img": "https://tse2.mm.bing.net/th?id=OIP.NM5ksdfw_W9Ba-kcdiqA4wHaFj&pid=Api&P=0&h=220",
+      "rating": 3,
+      "description": "Tender and juicy beef steak.",
+      "created": "2024-08-05T00:00:00Z"
+    },
+    {
+      "id": "106",
+      "name": "Chicken Breast",
+      "priceAfterDiscount": 201,
+      "priceBeforeDiscount": 10,
+      "discount": 0.1,
+      "quantity": 1,
+      "availableInStock": 50,
+      "categoryId": 3,
+      "img": "https://tse2.mm.bing.net/th?id=OIP.99EcMg4FHyUSSDpu2k5vfQHaLH&pid=Api&P=0&h=220",
+      "rating": 4.7,
+      "description": "Lean and healthy chicken breast.",
+      "created": "2024-08-06T00:00:00Z"
+    },
+    {
+      "id": "107",
+      "name": "Tomato",
+      "priceAfterDiscount": 100,
+      "priceBeforeDiscount": 1.4,
+      "discount": 0.05,
+      "quantity": 1,
+      "availableInStock": 100,
+      "categoryId": 1,
+      "img": "https://tse1.mm.bing.net/th?id=OIP.kNPDX7J2Ozl92SIrYEZJKwHaE8&pid=Api&P=0&h=220",
+      "rating": 4.5,
+      "description": "Fresh and ripe tomatoes.",
+      "created": "2024-08-07T00:00:00Z"
+    },
+    {
+      "id": "108",
+      "name": "Grapes",
+      "priceAfterDiscount": 290,
+      "priceBeforeDiscount": 4,
+      "discount": 0.2,
+      "quantity": 1,
+      "availableInStock": 70,
+      "categoryId": 1,
+      "img": "https://tse4.mm.bing.net/th?id=OIP.T_d6sxcB1gBHADClVzb-hwHaE8&pid=Api&P=0&h=220",
+      "rating": 4,
+      "description": "Sweet and juicy grapes.",
+      "created": "2024-08-08T00:00:00Z"
+    },
+    {
+      "id": "109",
+      "name": "Lettuce",
+      "priceAfterDiscount": 299,
+      "priceBeforeDiscount": 1.65,
+      "discount": 0.1,
+      "quantity": 1,
+      "availableInStock": 80,
+      "categoryId": 1,
+      "img": "https://www.gannett-cdn.com/-mm-/b2b05a4ab25f4fca0316459e1c7404c537a89702/c=0-0-1365-768/local/-/media/2018/07/24/USATODAY/usatsports/romaine-lettuce-freshway-farms.jpg?width=3200&height=1680&fit=crop",
+      "rating": 2.5,
+      "description": "Crisp and fresh lettuce.",
+      "created": "2024-08-09T00:00:00Z"
+    },
+    {
+      "id": "110",
+      "name": "Pork Ribs",
+      "rating": 2.5,
+      "priceAfterDiscount": 14.99,
+      "priceBeforeDiscount": 17,
+      "discount": 0.15,
+      "quantity": 1,
+      "availableInStock": 40,
+      "categoryId": 1,
+      "img": "https://www.recipetineats.com/tachyon/2019/08/Oven-Pork-Ribs-with-Barbecue-Sauce-SQ.jpg",
+      "description": "Savory and tender pork ribs.",
+      "created": "2024-08-10T00:00:00Z"
+    }
+  ],
+  "categories": [
+    {
+      "id": "1",
+      "name": "Vegetables",
+      "image": "category-2"
+    },
+    {
+      "id": "2",
+      "name": "Fruits",
+      "image": "category-3"
+    },
+    {
+      "id": "3",
+      "name": "Meat",
+      "image": "category-4"
+    }
+  ],
+  "user": [
+    {
+      "id": "f25ca50e-1fec-421c-9577-e1db95a46d48",
+      "name": "Mona",
+      "email": "mona588mohamed@gmail.com",
+      "password": "123456",
+      "token": ""
+    },
+    {
+      "id": "1da8d5e5-3207-4e5e-a760-0612fbbb4ce3",
+      "name": "mona",
+      "email": "mj@gmail.com",
+      "password": "123456",
+      "token": ""
+    },
+    {
+      "id": "f617f3a9-08bb-45b8-a167-1379c1a7c991",
+      "name": "safaa",
+      "email": "safaaGk@gmail.com",
+      "password": "123456",
+      "token": "b456648a-751f-4924-b457-953ceaa8f4e7"
+    }
+  ],
+  "order": [
+    {
+      "id": "81d73298-be2f-4904-b389-dff644caa347",
+      "productId": "107",
+      "categoryId": 1,
+      "totalPrice": 600,
+      "userId": "1da8d5e5-3207-4e5e-a760-0612fbbb4ce3",
+      "quantity": 6,
+      "productImage": "https://tse1.mm.bing.net/th?id=OIP.kNPDX7J2Ozl92SIrYEZJKwHaE8&pid=Api&P=0&h=220",
+      "productName": "Tomato"
+    },
+    {
+      "id": "9e71d0a3-0161-4351-9dd9-79b512396a3c",
+      "productId": "110",
+      "categoryId": 1,
+      "totalPrice": 89.94,
+      "userId": "1da8d5e5-3207-4e5e-a760-0612fbbb4ce3",
+      "quantity": 6,
+      "productImage": "https://www.recipetineats.com/tachyon/2019/08/Oven-Pork-Ribs-with-Barbecue-Sauce-SQ.jpg",
+      "productName": "Pork Ribs"
+    },
+    {
+      "id": "9bceae5f-ec47-4327-900a-303225a595dd",
+      "productId": "102",
+      "categoryId": 1,
+      "totalPrice": 540,
+      "userId": "f25ca50e-1fec-421c-9577-e1db95a46d48",
+      "quantity": 6,
+      "productImage": "https://tse3.mm.bing.net/th?id=OIP.zeKqXlUZor5fT88s0IVDhQHaEm&pid=Api&P=0&h=220",
+      "productName": "Broccoli"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+<section id="features" class="section-p1">
+  <h1>Top Categories</h1>
+  <div class="dh">
+    @for(item of categories;track item){
+      <div class="f-box" 
+      [routerLink]="['/items']" 
+      [queryParams]="{ categoryId: item.id ? item.id.toString() : '', name: '' }">
+            <img [src]="'../../../assets/images/' + item.image + '.png'"  alt="{{item.name}}" />
+      <h6>{{item.name}}</h6>
+    </div>
+  }
+
+  </div>
+</section>

@@ -1,0 +1,39 @@
+nav{
+  background-color: #f7f5eb;
+color:#000;
+position: -webkit-sticky; /* For Safari */
+position: sticky;
+top: 0;
+width: 100%;
+transition: background-color 0.3s, box-shadow 0.3s;
+padding: 10px 0;
+z-index: 1000; /* Ensure the navbar is above other content */
+}
+span{
+  font-size: 20px;
+  font-weight: 700;
+
+}
+ul li a{
+  font-size: 16px;
+    padding: 10px 10px;
+    display: inline-block;
+    white-space: nowrap;
+    font-weight: 700;
+}
+
+/* Styles when scrolling */
+.navbar.scrolled {
+  background-color: #f7f5eb ;
+  opacity: 0.4;/* Change to desired color */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow effect */
+}
+.el{
+  position: relative;
+    top: -6px;
+    right: -37px;
+}
+
+li a {
+  text-decoration: none;
+}

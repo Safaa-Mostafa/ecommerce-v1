@@ -1,0 +1,160 @@
+<!-- <nav
+  class="relative flex w-full flex-wrap items-center justify-between bg-black-20 py-2 shadow-dark-mild  lg:py-4">
+  <div class="flex w-full flex-wrap items-center justify-between px-3">
+    <span class="ms-2 text-xl "> Shopping </span>
+    <div class="ms-5 flex w-[30%] items-start justify-between">
+      <ul class="flex flex-col lg:flex-row list-none ml-auto grid-rows-1">
+        <li class="nav-item">
+          <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
+             routerLink="">
+          <span class="ml-2">Home</span>
+          </a>
+        </li>
+         @if(this.userId == ""){
+        <li class="nav-item">
+          <a routerLink="signup"
+            class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug hover:opacity-75">
+         <span class="ml-2">Sign up</span>
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a routerLink="login"
+            class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75">
+           <span class="ml-2">Sign In</span>
+          </a>
+        </li>
+      }
+
+        <li class="nav-item">
+          <a routerLink="/items"
+            class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75"
+           routerLink="/items">
+          <span class="ml-2">Items</span>
+          </a>
+        </li>
+        @if(this.userId != ""){
+
+          <li class="nav-item">
+            <a (click)="logout()"
+              class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug  hover:opacity-75">
+            <span class="ml-2">Logout</span>
+            </a>
+          </li>
+          <li class="nav-item flex items-center">
+            <a routerLink="signup" class="flex items-center">
+               @if(orders && orders.length){
+              <span class="flex h-4 w-4 items-center justify-center rounded-full bg-red-500 text-xs text-white p-1">
+                {{ orders.length }}
+              </span>
+            }
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="ml-2 h-6 w-6">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+              </svg>
+            </a>
+          </li>
+
+        }
+      </ul>
+    </div>
+    <div class="ms-5 flex w-[20%] items-center justify-between">
+      <span
+        class="  flex items-center whitespace-nowrap rounded px-3 py-1.5 text-center text-base font-normal text-gray-600 dark:text-white [&>svg]:w-5"
+        id="basic-addon2">
+
+      </span>
+    </div>
+  </div>
+</nav> -->
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="relative flex w-full flex-wrap items-center justify-between bg-black-20 py-2 shadow-dark-mild lg:py-4">
+  <div class="flex w-full flex-wrap items-center justify-between px-3">
+    <!-- Logo or Title -->
+    <span class="ms-2 text-xl">Shopping</span>
+
+    <!-- Navigation Links -->
+    <div class="ms-5 flex w-[30%] items-start justify-between">
+      <ul class="flex flex-col lg:flex-row list-none ml-auto">
+        <!-- Home Link -->
+        <li class="nav-item">
+          <a class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug hover:opacity-75" routerLink="">
+            <span class="ml-2">Home</span>
+          </a>
+        </li>
+
+        <!-- Conditional Links for Signup and Login -->
+         @if(!userId){
+        <li class="nav-item">
+          <a routerLink="signup" class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug hover:opacity-75">
+            <span class="ml-2">Sign up</span>
+          </a>
+        </li>
+      }
+@if(!userId){
+        <li class="nav-item">
+          <a routerLink="login" class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug hover:opacity-75">
+            <span class="ml-2">Sign In</span>
+          </a>
+        </li>
+      }
+        <li class="nav-item">
+          <a routerLink="/items" class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug hover:opacity-75">
+            <span class="ml-2">Items</span>
+          </a>
+        </li>
+
+        @if(userId){
+
+       <li class="nav-item">
+          <a (click)="logout()" class="px-3 py-2 flex items-center text-xs uppercase font-bold leading-snug hover:opacity-75">
+            <span class="ml-2">Logout</span>
+          </a>
+        </li>
+      }
+
+
+
+
+      </ul>
+    </div>
+    <!-- Additional Placeholder Content (optional) -->
+    <div [hidden]="!userId" class="ms-5 flex w-[20%] items-center justify-between">
+      <li class="nav-item flex items-center text-decoration-none ">
+        <a routerLink="cart" class="flex items-center">
+      <span class="flex items-center whitespace-nowrap rounded px-3 py-1.5 text-center text-base font-normal text-gray-600 dark:text-white">
+        @if(orders && orders.length){
+          <span class="el flex h-4 w-4 items-center justify-center rounded-full bg-red-500 text-xs text-white p-1">
+            {{ orders.length }}
+          </span>
+        }
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="ml-2 h-6 w-6">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+          </svg>
+           </span>
+
+          </a>
+        </li>
+      </div>
+    
+    </div>
+    </nav>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,41 @@
+<!-- <div class="dropdown-container">
+  <select (change)="onCategoryChange($event)">
+    <option value="all">All</option>
+    @for(item of this.category ;track item.id){
+    <option [value]="item.name">{{ item.name }}</option>
+    }
+  </select>
+
+</div>
+
+  @if( this.productFiltered &&  this.productFiltered.length > 0){
+  <div class="mt-20 mx-11 flex flex-wrap ">
+    @for(item of  this.productFiltered;track item.id){
+      <div>
+        <app-item [prd]="item"></app-item>
+      </div>
+    }
+
+  </div>
+
+}
+
+@if(!this.productFiltered){
+  <div class="mt-20 mx-11 flex flex-wrap ">
+    @for(item of  this.prods  ;track item.id){
+      <div>
+        <app-item [prd]="item"></app-item>
+      </div>
+    }
+
+  </div>
+
+}
+@if(this.productFiltered && this.productFiltered.length == 0){
+  <div class="mt-20 mx-11 flex flex-wrap ">
+ <div>No Available items In this category</div>
+
+  </div>
+
+}
+ -->

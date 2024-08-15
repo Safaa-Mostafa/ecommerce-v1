@@ -1,0 +1,82 @@
+<!-- <div class="max-w-sm h rounded overflow-hidden shadow-lg ml-2 ">
+  <img class="w-full" [src]="prd.img" alt="Sunset in the mountains">
+  <div class="px-6 py-4">
+    <div class="font-bold text-xl mb-2">{{prd.name}}</div>
+  </div>
+  <div class="px-6 pt-4 pb-2">
+
+    <span class="inline-block rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">
+      {{prd.price}} </span>
+      <button (click)="onChange('+',prd)" class="btn btn-color">
+        +
+      </button>
+    <span class="inline-block  rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2"> {{prd.quantity}} </span>
+    <button (click)="onChange('-',prd)" class="btn btn-color">
+      -
+    </button>
+    <button class="btn btn-blue mx-3">
+      Add to Cart
+    </button>
+    <span class="inline-block bg-gray-200 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2">#winter</span>
+ </div>
+</div>  -->
+
+  <!-- <div class="dh">
+    <select id="countries"   class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+      <option selected>Choose a Category</option>
+    @for(item of categories;track item){
+        <option  [value]="item.id" [routerLink]="['/items']" [queryParams]="{ categoryId: item.id }">{{item.name}}</option>
+      }
+    </select>
+<input type="text" placeholder="Search Products" >
+
+  </div> -->
+@if(!hideSpecificTag){
+<app-slider></app-slider>
+}
+  <!-- <input
+    type="text"
+    style="width:25%"
+    class="form-control"
+    placeholder="Search..."
+    [(ngModel)]="prdName"
+(keyup)="filterByName()"
+  /> -->
+  <!-- Categories -->
+    <div class="flex justify-center space-x-4 mb-6 mt-3">
+      @for(item of this.categories ;track item){
+      <a (click)="selectCategory(item.id)" class="category-link border-bottom:2px solid transparent ;font-size: 30px;
+    font-weight: 700;">{{item.name}}</a>
+    }
+    </div>
+
+
+    <div class="container">
+@for( item of products;track item){
+<div class="card">
+  <img [src]="item.img" alt="{{ item.name }}" class="card-img">
+  <div class="card-body">
+    <h2 class="card-title">{{ item.name }}</h2>
+    <p class="card-price">{{ item.priceAfterDiscount  }}$</p>
+    <div class="rating">
+      @for(star of [1, 2, 3, 4, 5];track star){
+      <ng-container>
+        <i class="fa n" [ngClass]="{
+          'fa-star': item.rating >= star,
+          'fa-star-half-alt': item.rating >= (star - 0.5) && item.rating < star,
+          'fa-star-o': item.rating < (star - 0.5)
+        }"></i>
+      </ng-container>
+    }
+    </div>
+    <div class="card-actions">
+      <button (click)="onChange('+',item)" class="btn btn-increment">+</button>
+      <span class="quantity">{{ item.quantity }}</span>
+      <button (click)="onChange('-',item)" class="btn btn-decrement">-</button>
+    </div>
+    <button class="btn btn-add-to-cart" (click)="addItemToCart(item)" routerLinkActive="router-link-active" >Add to Cart</button>
+  </div>
+</div>
+}
+</div>
+
